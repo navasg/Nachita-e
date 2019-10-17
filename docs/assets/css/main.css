@@ -707,6 +707,12 @@ button:focus {
   text-align: center;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-general__subtitle {
+    width: 100%;
+  }
+}
+
 .navbar {
   background-color: #fff;
   transition: .3s ease-in-out;
@@ -1265,6 +1271,12 @@ button:focus {
   border-radius: 5px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-blog .main-blog__item {
+    margin-bottom: 3rem;
+  }
+}
+
 .main-blog .main-blog__item .main-blog__img img {
   width: 100%;
 }
@@ -1284,11 +1296,24 @@ button:focus {
   grid-template-rows: repeat(2, 18rem);
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-featured .main-featured__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 27rem);
+  }
+}
+
 .main-featured .main-featured__item {
   background-size: cover !important;
   background-position: center !important;
   position: relative;
   border-radius: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-featured .main-featured__item {
+    margin: 1rem 0 !important;
+  }
 }
 
 .main-featured .main-featured__item:nth-child(1) {
@@ -1302,10 +1327,16 @@ button:focus {
   grid-row: 1/3;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-featured .main-featured__item:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
 .main-featured .main-featured__item:nth-child(3) {
   grid-column: 1/2;
   grid-row: 2/3;
-  margin: 0 1rem 0 0;
 }
 
 .main-featured .main-featured__mask {
@@ -1359,6 +1390,13 @@ button:focus {
   border-radius: 5px;
   transition: .3s;
   border: 1px solid #f1f1f1;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-products .main-product__card {
+    margin-bottom: 3rem;
+    box-shadow: rgba(191, 191, 191, 0.72) 2px 1px 8px;
+  }
 }
 
 .main-products .main-product__card .main-product__img {

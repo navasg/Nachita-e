@@ -102,9 +102,11 @@ button:focus {
 .main-general__subtitle {
   margin-bottom: 3rem;
   width: 70%;
-
   font-size: 1rem;
   text-align: center;
+  @include respond-to(xs) {
+    width: 100%;
+  }
 }
 
 .navbar {
@@ -639,7 +641,10 @@ button:focus {
 
   .main-blog__item {
     box-shadow: rgba(191, 191, 191, 0.72) 2px 1px 8px;
-  border-radius: 5px;
+    border-radius: 5px;
+    @include respond-to(xs) {
+      margin-bottom: 3rem;
+    }
 
     .main-blog__img {
       img {
@@ -663,6 +668,11 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 18rem);
+    @include respond-to(xs) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 27rem);
+      
+    }
   }
   
   
@@ -670,25 +680,32 @@ button:focus {
     background-size: cover!important;
     background-position: center!important;
     position: relative;
-  border-radius: 5px;
+    border-radius: 5px;
+    @include respond-to(xs) {
+      margin: 1rem 0!important;
+    }
 
 
     &:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 0 1rem 1rem 0;
+  
   }
 
   &:nth-child(2) {
     grid-column: 2/3;
     grid-row: 1/3;
+    @include respond-to(xs) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
   }
 
   &:nth-child(3) {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin: 0 1rem 0 0;
-  }
+    }
   }
 
  
@@ -742,10 +759,13 @@ margin-bottom: 3rem!important;
   }
   .main-product__card {
     height: 30rem;
-  border-radius: 5px;
-
+    border-radius: 5px;
     transition: .3s;
+    @include respond-to(xs) {
+      margin-bottom: 3rem;
+    box-shadow: rgba(191, 191, 191, 0.72) 2px 1px 8px;
 
+    }
     border: 1px solid #f1f1f1;
     .main-product__img {
       width: 100%;
