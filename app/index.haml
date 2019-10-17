@@ -1,0 +1,389 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title Nachita
+    %link{ rel: 'stylesheet', href:'assets/css/bootstrap.min.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css', rel:'stylesheet' }/
+    %link{ href:'https://fonts.googleapis.com/css?family=Poppins:400,500,700,800,900&display=swap', rel:'stylesheet' }/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => '#' }
+                %img#iso{ :src => 'assets/img/logo.jpg' }/ 
+          .main-brand__top
+            .main-brand
+              %a.navbar-brand{ :href => '#' }
+                %img#iso{ :src => 'assets/img/logo.jpg' }/ 
+
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => '#' }
+              
+              %img#iso{ :src => 'assets/img/logo.jpg' }/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link.active{ :data-toggle => 'offcanvas',   :href => 'home', :data-toggle => 'offcanvas'  } Inicio
+              %li.nav-item
+                %a.nav-link{ :href => '#', :data-toggle => 'offcanvas', :data-toggle => 'offcanvas' } ¿Quiénes Somos?
+              %li.nav-item
+                %a.nav-link{ :href => '#', :data-toggle => 'offcanvas' } Productos
+              %li.nav-item
+                %a.nav-link{:href => '#',:data-toggle => 'offcanvas' } Contáctanos
+              %ul.nav-list
+                %li.nav-item
+                  %a.nav-link.active{ :data-toggle => 'offcanvas',   :href => 'home', :data-toggle => 'offcanvas'  }
+                    %i.fa.fa-search
+                %li.nav-item
+                  %a.nav-link.active{ :data-toggle => 'offcanvas',   :href => 'home', :data-toggle => 'offcanvas'  }
+                    %i.fa.fa-shopping-bag
+
+    %section.main-banner
+      .main-banner__content
+        .main-banner__item
+          .main-banner__text
+            .main-banner__title
+              %p 
+                BODY SHAPERS FOR EVERY WOMAN 
+              %p.banner-subtitle
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut ipsum saepe voluptatem dolorum? Odio sint alias laudantium neque  
+              %a.main-general__button{ :href => '#' } Ver Producto
+            %img{:src=>"//cdn.shopify.com/s/files/1/0072/0417/5981/files/Home-1-1.png?v=1563340162"}
+        .main-banner__item
+          .main-banner__text
+            .main-banner__title
+              %p 
+                BODY SHAPERS FOR EVERY WOMAN 
+              %p.banner-subtitle
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut ipsum saepe voluptatem dolorum? Odio sint alias laudantium neque  
+              %a.main-general__button{ :href => '#' } Ver Producto
+            %img{:src=>"assets/img/banner.png"}
+      
+
+    %section.main-products
+      .container.padding-top-bottom
+        %h2.main-general__title 
+          Nuestros Productos
+        .d-flex.justify-content-center
+          %p.main-general__subtitle
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
+          %li
+            %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Teens
+          %li
+            %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Natural
+          -# %li
+          -#   %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} 
+        #pills-tabContent.tab-content.wow.animated.fadeInUp{:style=>"visibility: visible;"}
+          #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"} 
+            .row
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    %img{'data-src'=>"assets/img/product.jpg", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    %img{'data-src'=>"assets/img/product3.jpg", :alt=>""}
+                  
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    %img{'data-src'=>"assets/img/product2.jpg", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    %img{'data-src'=>"assets/img/product3.jpg", :alt=>""}
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+           
+                
+          #pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"} 
+            .row
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+           
+          #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"} 
+            .row
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+              .col-lg-3
+                .main-product__card
+                  .main-product__img
+                    -# %img{'data-src'=>"https://cdn.shopify.com/s/files/1/0072/0417/5981/products/11_large.png?v=1563341029", :alt=>""}
+                    %span.main-product__sale
+                      Sale
+                  .main-product__body
+                    .main-product__title
+                      Lorem Ipsum
+                    %p.main-product__price
+                      $ 200
+                    %a{:href=>""}
+                      Ver Producto
+           
+
+
+    %section.main-featured
+      .container.padding-top-bottom
+        %h2.main-general__title 
+          Productos Destacados
+        .d-flex.justify-content-center
+          %p.main-general__subtitle
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        .main-featured__container.wow.animated.fadeIn{:style=>"visibility: visible;"}
+          .main-featured__item{:style=>"background-image: url('//cdn.shopify.com/s/files/1/0072/0417/5981/files/Banner-570-x-260--1.png?v=1563597854')"}
+            .main-featured__mask
+              .main-featured__title 
+                Table Shiner Moving
+              %p.main-featured__price 
+                $ 300
+              %a(href="")
+                Ver Producto
+          .main-featured__item{:style=>"background-image: url('https://cdn.shopify.com/s/files/1/0072/0417/5981/files/Banner-570-x-750-1.png?v=1563351834')"}
+            .main-featured__mask
+              .main-featured__title 
+                Table Shiner Moving
+              %p.main-featured__price 
+                $ 300
+              %a(href="")
+                Ver Producto
+          .main-featured__item{:style=>"background-image: url('//cdn.shopify.com/s/files/1/0072/0417/5981/files/Banner-570-x-260--1.png?v=1563597854')"}
+            .main-featured__mask
+              .main-featured__title 
+                Table Shiner Moving
+              %p.main-featured__price 
+                $ 300
+              %a(href="")
+                Ver Producto
+        
+
+    %section.main-blog
+      .container.padding-top-bottom
+        %h2.main-general__title 
+          Blog
+        .d-flex.justify-content-center
+          %p.main-general__subtitle
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        .row.main-featured__container.wow.animated.fadeInRight{:style=>"visibility: visible;"}
+          .col-lg-4
+            .main-blog__item
+              .main-blog__img
+                %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
+              .main-blog__description
+                .main-blog__detail
+                  %p
+                    %i.fa.fa-calendar-check-o
+                    12 Junio 2019
+                  %p
+                    %i.fa.fa-user-o
+                    Génesis Navas
+                .main-blog__title
+                  Lorem Ipsum
+                .main-blog__text
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam e repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdam
+          .col-lg-4
+            .main-blog__item
+              .main-blog__img
+                %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
+              .main-blog__description
+                .main-blog__detail
+                  %p
+                    %i.fa.fa-calendar-check-o
+                    12 Junio 2019
+                  %p
+                    %i.fa.fa-user-o
+                    Génesis Navas
+                .main-blog__title
+                  Lorem Ipsum
+                .main-blog__text
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam e repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdam
+          .col-lg-4
+            .main-blog__item
+              .main-blog__img
+                %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
+              .main-blog__description
+                .main-blog__detail
+                  %p
+                    %i.fa.fa-calendar-check-o
+                    12 Junio 2019
+                  %p
+                    %i.fa.fa-user-o
+                    Génesis Navas
+                .main-blog__title
+                  Lorem Ipsum
+                .main-blog__text
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam e repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdam
+
+    
+    %footer.main-contact#contact 
+      .container.padding-top-bottom
+        .row
+          .col-lg-6
+            .main-footer__rrss
+              %h2.main-footer__title
+                Contáctanos
+              %p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur ipsa maiores iusto quibusdam officiis animi! Iure adipisci accusantium, id libero excepturi eligendi unde iusto tempore, eius vitae asperiores minima!
+              %ul
+                %li
+                  %i.fa.fa-facebook
+                %li
+                  %i.fa.fa-twitter
+                %li
+                  %i.fa.fa-instagram
+                %li
+                  %i.fa.fa-whatsapp
+
+              -# %img(src="assets/img/logo.jpg" alt="")/
+          .col-lg-6
+            %form
+              %input{ :type=>'text', :placeholder=>'Nombre' }/
+              %input{ :type=>'mail', :placeholder=>'Correo Electrónico' }/
+              %input{ :type=>'text', :placeholder=>'Asunto' }/
+              %textarea{ :placeholder=>'Mensaje' }
+              %a.main-general__button{ :href => '#' } Enviar
+          .col-lg-6
+    .main-powered  
+      %p
+        Copyright ©2019 Todos los derechos reservados | Diseño y desarrollo por 
+        %a{ :href=>'https://cmarketing.cl/' } Contact Marketing
+    %script{src: 'assets/js/jquery.min.js' }
+    %script{src: 'assets/js/bootstrap.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
+    %script{src: 'assets/js/slick.min.js' }
+    %script{src: 'assets/js/setting-slick.js' }
+    
+    %script{src: 'assets/js/main.js' }
