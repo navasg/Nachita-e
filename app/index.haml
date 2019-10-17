@@ -89,10 +89,10 @@
         #pills-tabContent.tab-content.wow.animated.fadeInUp{:style=>"visibility: visible;"}
           #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"} 
             .row
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:src=>"assets/img/product.jpg", :alt=>""}
+                    %img{ "data-src" => 'assets/img/product.jpg', :alt=>"" }/
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -100,24 +100,33 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:src=>"assets/img/product3.jpg", :alt=>""}
-                  
+                    %img{ "data-src" => 'assets/img/product3.jpg', :alt=>"Imagen Producto" }/                  
                   .main-product__body
                     .main-product__title
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:src=>"assets/img/product.jpg", :alt=>""}
+                    %img{ "data-src" => 'assets/img/product.jpg', :alt=>"Imagen Producto" }/
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -125,9 +134,14 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
                     %img{'data-src'=>"assets/img/product3.jpg", :alt=>""}
@@ -139,16 +153,21 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
            
                 
           #pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"} 
             .row
-              .col-lg-3
+              .col-lg-3.col-md-6.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:src=>"assets/img/product.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product2.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -156,9 +175,14 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
                     %img{:src=>"assets/img/product.jpg", :alt=>""}
@@ -169,12 +193,17 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:src=>"assets/img/product.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product3.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -182,9 +211,14 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
                     %img{:src=>"assets/img/product.jpg", :alt=>""}
@@ -195,15 +229,20 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
            
           #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"} 
             .row
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{:data=>"assets/img/product.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product3.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -211,12 +250,17 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{'data-src'=>"assets/img/product2.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product2.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -224,12 +268,17 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{'data-src'=>"assets/img/product.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -237,12 +286,17 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
-              .col-lg-3
+              .col-lg-3.col-md-6
                 .main-product__card
                   .main-product__img
-                    %img{'data-src'=>"assets/img/product2.jpg", :alt=>""}
+                    %img{:src=>"assets/img/product2.jpg", :alt=>""}
                     %span.main-product__sale
                       Sale
                   .main-product__body
@@ -250,6 +304,11 @@
                       Lorem Ipsum
                     %p.main-product__price
                       $ 200
+                    %ul.main-product__colors
+                      %li
+                      %li
+                      %li
+                      %li
                     %a{:href=>""}
                       Ver Producto
            
@@ -297,7 +356,7 @@
           %p.main-general__subtitle
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
         .row.main-featured__container.wow.animated.fadeInRight{:style=>"visibility: visible;"}
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-blog__item
               .main-blog__img
                 %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
@@ -313,7 +372,7 @@
                   Lorem Ipsum
                 .main-blog__text
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam e repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdam
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-blog__item
               .main-blog__img
                 %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
@@ -329,7 +388,7 @@
                   Lorem Ipsum
                 .main-blog__text
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellendus quibusdam e repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdame repellendus quibusdam
-          .col-lg-4
+          .col-lg-4.col-md-6
             .main-blog__item
               .main-blog__img
                 %img(src="//cdn.shopify.com/s/files/1/0072/0417/5981/articles/adult-blur-body-918576_370x236.jpg?v=1562319896" alt="")/
@@ -385,5 +444,4 @@
     %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
     %script{src: 'assets/js/slick.min.js' }
     %script{src: 'assets/js/setting-slick.js' }
-    
     %script{src: 'assets/js/main.js' }
