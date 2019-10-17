@@ -299,6 +299,9 @@ button:focus {
 
   .main-general__button {
     margin-left: 7rem;
+    @include respond-to(xs) {
+margin: 1rem;
+    }
   }
 
 
@@ -312,12 +315,16 @@ button:focus {
     
     @include respond-to(xs) {
       width: 100%;
+      flex-direction: column;
     }
 
     img {
       height: 100%;
       width: 100%;
       object-fit: contain;
+      @include respond-to(xs){
+        margin-top: 2rem;
+      }
     }
 
     .main-banner__title {
@@ -333,7 +340,8 @@ button:focus {
 
         @include respond-to(xs) {
           font-size: 30px;
-          padding: 0;
+          margin: 0;
+          padding: 1rem;
         }
 
       }
@@ -343,6 +351,11 @@ button:focus {
           font-weight: 500;
           margin-bottom: 3rem;
           color: #a0a0a0;
+          @include respond-to(xs) {
+            margin: 0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+          }
         }
     }
   }
@@ -355,6 +368,7 @@ button:focus {
       width: 100%;
       height: 100%;
       object-fit: cover;
+
     }
   }
 }
